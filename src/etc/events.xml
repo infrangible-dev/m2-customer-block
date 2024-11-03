@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!--
+ * @author      Andreas Knollmann
+ * @copyright   2014-2024 Softwareentwicklung Andreas Knollmann
+ * @license     http://www.opensource.org/licenses/mit-license.php MIT
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="controller_action_predispatch_sales_order_massUnhold">
+        <observer name="infrangible_customer_block_controller_action_predispatch_adminhtml_sales_order_mass_unhold" instance="Infrangible\CustomerBlock\Observer\ControllerActionPredispatchSalesOrderMassUnhold" />
+    </event>
+    <event name="controller_action_predispatch_sales_order_unhold">
+        <observer name="infrangible_customer_block_controller_action_predispatch_adminhtml_sales_order_unhold" instance="Infrangible\CustomerBlock\Observer\ControllerActionPredispatchSalesOrderUnhold" />
+    </event>
+    <event name="sales_order_save_before">
+        <observer name="infrangible_customer_block_sales_order_save_before" instance="Infrangible\CustomerBlock\Observer\SalesOrderSaveBefore" />
+    </event>
+    <event name="sales_order_save_after">
+        <observer name="infrangible_customer_block_sales_order_save_after" instance="Infrangible\CustomerBlock\Observer\SalesOrderSaveAfter" />
+    </event>
+    <event name="sales_order_item_cancel">
+        <observer name="infrangible_customer_block_sales_order_item_cancel" instance="Infrangible\CustomerBlock\Observer\SalesOrderItemCancel" />
+    </event>
+</config>
