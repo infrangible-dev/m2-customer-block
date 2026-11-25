@@ -1,11 +1,19 @@
 {
     "name": "infrangible/m2-customer-block",
-    "description": "Infrangible Magento 2 Customer Block",
+    "description": "Puts orders of blocked customers on hold automatically, based on a list of email addresses, names, addresses or PayPal payer IDs, and notifies your team by email.",
     "type": "magento2-module",
     "version": "1.0.1",
     "license": "MIT",
     "keywords": [
-        "Magento"
+        "Magento",
+        "Magento 2",
+        "Adobe Commerce",
+        "Customers",
+        "Admin tools",
+        "Email",
+        "block customers",
+        "hold orders of blocked customers",
+        "fraud customer blacklist"
     ],
     "homepage": "https://github.com/infrangible-dev/m2-customer-block",
     "authors": [
